@@ -1,4 +1,4 @@
-package kz.singularity.bolatov.solidbankapp;
+package kz.singularity.bolatov.solidbankapp.DAO;
 
 import kz.singularity.bolatov.solidbankapp.model.Account;
 import kz.singularity.bolatov.solidbankapp.model.AccountType;
