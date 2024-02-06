@@ -9,7 +9,7 @@ public class MyCLI implements CLIUI {
 
     private Scanner scanner;
 
-    MyCLI(Scanner scanner) {
+    MyCLI() {
         this.scanner = new Scanner(System.in);
     }
 
@@ -21,8 +21,11 @@ public class MyCLI implements CLIUI {
         return "";
     }
 
+    public Scanner getScanner(){
+        return scanner;
+    }
     @Override
     public AccountType requestAccountType() {
-        return null;
+        return AccountType.valueOf(scanner.nextLine());
     }
 }
